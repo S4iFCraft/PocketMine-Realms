@@ -59,9 +59,9 @@ class PMRealms implements Plugin{
 		$this->api->asyncOperation(ASYNC_CURL_POST, array(
 			"url" => "http://peoapi.pocketmine.net/server/heartbeat",
 			"data" => array(
-				"ip" => $this->config->get("externalAddress"),
-				"port" => (int) $this->config->get("externalPort"),
-				"ownerName" => $this->config->get("ownerName"),
+				"ip" => $this->config->get("94.59.109.245"),
+				"port" => (int) $this->config->get("20566"),
+				"ownerName" => $this->config->get("S4iFCraft"),
 				"name" => $this->server->name,
 				"maxNrPlayers" => $this->server->maxClients,
 				"nrPlayers" => count($this->api->player->getAll()),
